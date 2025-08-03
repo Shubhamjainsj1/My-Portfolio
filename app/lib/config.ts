@@ -19,7 +19,7 @@ export const metaData = {
 export const socialLinks = {
   twitter: "https://x.com/Shubham72663340",
   github: "https://github.com/Shubhamjainsj1",
-  // instagram: "https://www.instagram.com/",
+  instagram: "https://www.instagram.com/",
   linkedin: "www.linkedin.com/in/shubhamjainiiitnr",
   email: "jainshubham150304@gmail.com",
 };
