@@ -11,6 +11,7 @@ import { metaData } from "./lib/config";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  alternates: metaData.alternates,
   metadataBase: new URL(metaData.baseUrl),
   title: {
     default: metaData.title,
@@ -53,8 +54,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.className}`}>
-      <head>
-        <link
+      
+        {/* <link
           rel="alternate"
           type="application/rss+xml"
           href="/rss.xml"
@@ -71,8 +72,8 @@ export default function RootLayout({
           type="application/feed+json"
           href="/feed.json"
           title="JSON Feed"
-        />
-      </head>
+        /> */}
+      
       <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-12">
         <ThemeProvider
           attribute="class"
